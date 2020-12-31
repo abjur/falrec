@@ -4,6 +4,9 @@
 # falrec
 
 <!-- badges: start -->
+
+[![R build
+status](https://github.com/abjur/falrec/workflows/update-data/badge.svg)](https://github.com/abjur/falrec/actions)
 <!-- badges: end -->
 
 O pacote `{falrec}` baixa e atualiza os dados de falências e

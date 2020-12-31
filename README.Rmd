@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # falrec
 
 <!-- badges: start -->
+[![R build status](https://github.com/abjur/falrec/workflows/update-data/badge.svg)](https://github.com/abjur/falrec/actions)
 <!-- badges: end -->
 
 O pacote `{falrec}` baixa e atualiza os dados de falências e recuperações disponibilizados pelo [Serasa Experian](https://www.serasaexperian.com.br/amplie-seus-conhecimentos/indicadores-economicos).
