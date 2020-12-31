@@ -1,0 +1,23 @@
+Package: falrec
+Title: Downloads Bankruptcy Data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Julio",
+           family = "Trecenti",
+           role = c("aut", "cre"),
+           email = "julio.trecenti@gmail.com",
+           comment = c(ORCID = "0000-0002-1680-6389"))
+Description: Downloads and organizes data from Serasa Experian.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr,
+    httr,
+    xml2,
+    readxl,
+    tidyr
+Depends: 
+    R (>= 2.10)

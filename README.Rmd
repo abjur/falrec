@@ -1,0 +1,60 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# falrec
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+O pacote `{falrec}` baixa e atualiza os dados de falências e recuperações disponibilizados pelo [Serasa Experian](https://www.serasaexperian.com.br/amplie-seus-conhecimentos/indicadores-economicos).
+
+## Base de dados
+
+A base de dados pode ser acessada diretamente rodando
+
+```{r bd}
+library(falrec)
+
+head(falrec, 20)
+```
+
+Também é possível baixar a base diretamente do site através da função `load_falrec()`. A princípio, essa função não é necessária, pois a base é atualizada mensalmente.
+
+## Gráfico
+
+Exemplo de gráfico usando a base de `{falrec}`:
+
+```{r grafico, fig.width=8, fig.height=6}
+falrec %>% 
+  dplyr::mutate(wrap = dplyr::case_when(
+    tipo == "fal" & evento == "req" ~ "1. Falências Requeridas",
+    tipo == "fal" & evento == "dec" ~ "2. Falências Decretadas",
+    tipo == "rec" & evento == "req" ~ "3. Recuperações Requeridas",
+    tipo == "rec" & evento == "def" ~ "4. Recuperações Deferidas"
+  )) %>% 
+  dplyr::filter(n > 0) %>% 
+  ggplot2::ggplot() +
+  ggplot2::aes(x = data, y = n, colour = tamanho) +
+  ggplot2::geom_line() +
+  ggplot2::facet_wrap(~wrap, scales = "free_y", ncol = 2) +
+  ggplot2::theme_bw(14) +
+  ggplot2::scale_colour_viridis_d(begin = .2, end = .8) +
+  ggplot2::labs(x = "Data", y = "Quantidade", colour = "Tamanho") +
+  ggplot2::theme(legend.position = "bottom")
+```
+
+# Licença
+
+MIT
