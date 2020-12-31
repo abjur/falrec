@@ -16,6 +16,7 @@ A base de dados pode ser acessada diretamente rodando
 
 ``` r
 library(falrec)
+
 head(falrec, 20)
 #>          data tipo evento tamanho   n
 #> 1  1991-01-01  fal    req   micro   0
@@ -43,6 +44,9 @@ head(falrec, 20)
 Também é possível baixar a base diretamente do site através da função
 `load_falrec()`. A princípio, essa função não é necessária, pois a base
 é atualizada mensalmente.
+
+Se quiser acessar a base em excel, ela pode ser obtida [neste
+link](https://github.com/abjur/falrec/blob/master/inst/extdata/falrec.xlsx?raw=true).
 
 ## Gráfico
 
