@@ -5,12 +5,11 @@ load_falrec <- function() {
 
   u <- paste0(
     "https://www.serasaexperian.com.br/",
-    "amplie-seus-conhecimentos/indicadores-economicos"
+    "conteudos/indicadores-economicos/"
   )
   r <- httr::GET(u)
   xp <- paste0(
-    "//table[contains(@class, 'economic-table')]",
-    "//tr[td[contains(text(), 'Decretadas')]]//a"
+    "//a[contains(@data-gtm-subname, 'decretadas') and @download]"
   )
   u_falrec <- r %>%
     xml2::read_html() %>%
