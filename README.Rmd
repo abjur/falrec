@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# falrec
+# falrec <img src='man/figures/logo.png' align="right" height="138" />
 
 <!-- badges: start -->
 [![R build status](https://github.com/abjur/falrec/workflows/update-data/badge.svg)](https://github.com/abjur/falrec/actions)
@@ -39,7 +39,7 @@ Se quiser acessar a base em excel, ela pode ser obtida [neste link](https://gith
 
 Exemplo de gráfico usando a base de `{falrec}`:
 
-```{r grafico, fig.width=8, fig.height=6}
+```{r grafico, fig.width=8, fig.height=6, dpi = 300}
 falrec %>% 
   dplyr::mutate(wrap = dplyr::case_when(
     tipo == "fal" & evento == "req" ~ "1. Falências Requeridas",
