@@ -76,6 +76,13 @@ falrec %>%
 
 <img src="man/figures/README-grafico-1.png" width="100%" />
 
+# Para desenvolvedores
+
+```r
+# install.packages("remotes")
+remotes::install_github("abjur/falrec")
+```
+
 # Licença
 
 MIT
