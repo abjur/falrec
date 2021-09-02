@@ -76,7 +76,7 @@ falrec %>%
 
 <img src="man/figures/README-grafico-1.png" width="100%" />
 
-# Para desenvolvedores
+# Para pessoas desenvolvedoras
 
 ```r
 # install.packages("remotes")
