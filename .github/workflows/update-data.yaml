@@ -12,7 +12,7 @@ name: update-data
 
 jobs:
   R-CMD-check-update:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.PAT }}
       ESAJ_LOGIN: ${{ secrets.ESAJLOGIN }}
