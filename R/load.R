@@ -27,7 +27,7 @@ load_falrec <- function() {
     paste0("remove_", 1:3)
   )
 
-  unzip <- unzip(f, exdir = here::here('data-raw'))
+  unzip <- unzip(f, exdir = here::here('data-raw/zips'))
   path <- ("~/Documents/falrec/data-raw/zips/FACONS (13).xls")
 
   da_falrec <- readxl::read_excel(path, skip = 5, col_names = colunas)
