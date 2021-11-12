@@ -5,7 +5,7 @@
 \alias{falrec}
 \title{falrec}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 5760 rows and 5 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 5952 rows and 5 columns.
 }
 \usage{
 falrec

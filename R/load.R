@@ -13,7 +13,7 @@ load_falrec <- function() {
   )
   u_falrec <- r %>%
     xml2::read_html() %>%
-    xml2::xml_find_all("col-xs-12 col-sm-6 col-xl-4") %>%
+    xml2::xml_find_all(xp) %>%
     xml2::xml_attr("href")
   f <- tempfile(fileext = ".zip")
   httr::GET(u_falrec, httr::write_disk(f, TRUE))
