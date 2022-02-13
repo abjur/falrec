@@ -20,28 +20,28 @@ A base de dados pode ser acessada diretamente rodando
 ``` r
 library(falrec)
 
-head(falrec, 20)
-#>          data tipo evento tamanho   n
-#> 1  1991-01-01  fal    req   micro   0
-#> 2  1991-01-01  fal    req   media   0
-#> 3  1991-01-01  fal    req  grande   0
-#> 4  1991-01-01  fal    req   total 724
-#> 5  1991-01-01  fal    dec   micro   0
-#> 6  1991-01-01  fal    dec   media   0
-#> 7  1991-01-01  fal    dec  grande   0
-#> 8  1991-01-01  fal    dec   total  49
-#> 9  1991-01-01  rec    req   micro   0
-#> 10 1991-01-01  rec    req   media   0
-#> 11 1991-01-01  rec    req  grande   0
-#> 12 1991-01-01  rec    req   total   0
-#> 13 1991-01-01  rec    def   micro   0
-#> 14 1991-01-01  rec    def   media   0
-#> 15 1991-01-01  rec    def  grande   0
-#> 16 1991-01-01  rec    def   total   0
-#> 17 1991-02-01  fal    req   micro   0
-#> 18 1991-02-01  fal    req   media   0
-#> 19 1991-02-01  fal    req  grande   0
-#> 20 1991-02-01  fal    req   total 645
+tail(falrec, 20)
+#>            data tipo evento tamanho  n
+#> 5949 2021-12-01  rec    def   micro 59
+#> 5950 2021-12-01  rec    def   media 12
+#> 5951 2021-12-01  rec    def  grande  4
+#> 5952 2021-12-01  rec    def   total 75
+#> 5953 2022-01-01  fal    req   micro 27
+#> 5954 2022-01-01  fal    req   media  8
+#> 5955 2022-01-01  fal    req  grande 11
+#> 5956 2022-01-01  fal    req   total 46
+#> 5957 2022-01-01  fal    dec   micro 30
+#> 5958 2022-01-01  fal    dec   media 12
+#> 5959 2022-01-01  fal    dec  grande  3
+#> 5960 2022-01-01  fal    dec   total 45
+#> 5961 2022-01-01  rec    req   micro 31
+#> 5962 2022-01-01  rec    req   media 30
+#> 5963 2022-01-01  rec    req  grande  6
+#> 5964 2022-01-01  rec    req   total 67
+#> 5965 2022-01-01  rec    def   micro 11
+#> 5966 2022-01-01  rec    def   media 11
+#> 5967 2022-01-01  rec    def  grande  2
+#> 5968 2022-01-01  rec    def   total 24
 ```
 
 Também é possível baixar a base diretamente do site através da função
@@ -75,13 +75,6 @@ falrec %>%
 ```
 
 <img src="man/figures/README-grafico-1.png" width="100%" />
-
-# Para pessoas desenvolvedoras
-
-```r
-# install.packages("remotes")
-remotes::install_github("abjur/falrec")
-```
 
 # Licença
 
