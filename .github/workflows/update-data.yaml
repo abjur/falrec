@@ -10,7 +10,7 @@ on:
 name: update-data
 
 jobs:
-  R-CMD-check-update:
+  update-data:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.PAT }}
