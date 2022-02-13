@@ -15,7 +15,7 @@ load_falrec <- function() {
     xml2::read_html() %>%
     xml2::xml_find_all(xp) %>%
     xml2::xml_attr("href")
-  f <- tempfile(fileext = ".zip")
+  f <- tempfile(fileext = ".xlsx")
   httr::GET(u_falrec, httr::write_disk(f, TRUE))
   tamanhos <- c("micro", "media", "grande", "total")
   colunas <- c(
@@ -27,8 +27,8 @@ load_falrec <- function() {
     paste0("remove_", 1:3)
   )
 
-  unzip <- unzip(f, exdir = here::here('data-raw'))
-  path <- ("data-raw/FACONS (13).xls")
+  # unzip <- unzip(f, exdir = here::here('data-raw'))
+  path <- f
 
   da_falrec <- readxl::read_excel(path, skip = 5, col_names = colunas)
   da_falrec <- da_falrec[, !grepl("remove", colunas)]
@@ -36,6 +36,7 @@ load_falrec <- function() {
   da_falrec <- da_falrec %>%
     tidyr::pivot_longer(-1, "variavel", values_to = "n") %>%
     tidyr::separate("variavel", c("tipo", "evento", "tamanho"))
+  da_falrec <- da_falrec[!is.na(da_falrec$n), ]
 
   file.remove(f)
 
