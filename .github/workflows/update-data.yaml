@@ -23,6 +23,9 @@ jobs:
           extra-packages: |
             any::devtools
             any::rmarkdown
+            any::ggplot2
+            any::dplyr
+            any::writexl
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
