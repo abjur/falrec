@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - master
   schedule:
   - cron: "0 6 * * 0"
 
@@ -15,20 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.PAT }}
-      ESAJ_LOGIN: ${{ secrets.ESAJLOGIN }}
-      ESAJ_SENHA: ${{ secrets.ESAJSENHA }}
     steps:
       - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@v1
-      - uses: r-lib/actions/setup-pandoc@v1
-      - name: Install dependencies
-        run: |
-          if (!requireNamespace("callr", quietly = TRUE)) install.packages("callr")
-          options(repos = "https://packagemanager.rstudio.com/all/__linux__/bionic/latest")
-          install.packages(c(
-            "rcmdcheck", "remotes", "writexl", "usethis"
-          ))
-          remotes::install_local(dependencies = TRUE)
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-dependencies@v2
+        with:
+          cache-version: 2
+        extra-packages: |
+          any::devtools
         shell: Rscript {0}
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
