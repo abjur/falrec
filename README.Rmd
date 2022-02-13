@@ -28,7 +28,7 @@ A base de dados pode ser acessada diretamente rodando
 ```{r bd}
 library(falrec)
 
-head(falrec, 20)
+tail(falrec, 20)
 ```
 
 Também é possível baixar a base diretamente do site através da função `load_falrec()`. A princípio, essa função não é necessária, pois a base é atualizada mensalmente.

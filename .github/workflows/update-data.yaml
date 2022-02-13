@@ -22,12 +22,16 @@ jobs:
           cache-version: 2
           extra-packages: |
             any::devtools
+            any::rmarkdown
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
-      - name: Execute Script
+      - name: Update data
         run: |
           Rscript "data-raw/update.R"
+      - name: Update README
+        run: rmarkdown::render("README.Rmd")
+        shell: Rscript {0}
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
