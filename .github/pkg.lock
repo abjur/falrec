@@ -1,7 +1,7 @@
 {
   "lockfile_version": 1,
   "os": "Ubuntu 20.04.4 LTS",
-  "r_version": "R version 4.1.2 (2021-11-01)",
+  "r_version": "R version 4.1.3 (2022-03-10)",
   "platform": "x86_64-pc-linux-gnu",
   "packages": [
     {
@@ -774,7 +774,7 @@
     {
       "ref": "Rcpp",
       "package": "Rcpp",
-      "version": "1.0.8",
+      "version": "1.0.8.2",
       "type": "standard",
       "direct": false,
       "binary": false,
@@ -787,16 +787,16 @@
         "RemoteRef": "Rcpp",
         "RemoteRepos": "https://cloud.r-project.org",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "1.0.8"
+        "RemoteSha": "1.0.8.2"
       },
-      "sources": ["https://cloud.r-project.org/src/contrib/Rcpp_1.0.8.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/Rcpp_1.0.8.tar.gz"],
-      "target": "src/contrib/Rcpp_1.0.8.tar.gz",
+      "sources": ["https://cloud.r-project.org/src/contrib/Rcpp_1.0.8.2.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/Rcpp_1.0.8.2.tar.gz"],
+      "target": "src/contrib/Rcpp_1.0.8.2.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "GPL (>= 2)",
-      "sha256": "879f9296bc045ac4ed464578723bd37fcabbbdaa30aaaf070cf953e329f678ee",
-      "filesize": 3036631,
+      "sha256": "2ebe2e1b0aa714a0d2913316b0eca4f152de8a7ae16bf5c64f6c62f416c57b05",
+      "filesize": 3084732,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": "",
@@ -1301,7 +1301,7 @@
     {
       "ref": "commonmark",
       "package": "commonmark",
-      "version": "1.7",
+      "version": "1.8.0",
       "type": "standard",
       "direct": false,
       "binary": false,
@@ -1314,16 +1314,16 @@
         "RemoteRef": "commonmark",
         "RemoteRepos": "https://cloud.r-project.org",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "1.7"
+        "RemoteSha": "1.8.0"
       },
-      "sources": ["https://cloud.r-project.org/src/contrib/commonmark_1.7.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/commonmark_1.7.tar.gz"],
-      "target": "src/contrib/commonmark_1.7.tar.gz",
+      "sources": ["https://cloud.r-project.org/src/contrib/commonmark_1.8.0.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/commonmark_1.8.0.tar.gz"],
+      "target": "src/contrib/commonmark_1.8.0.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "BSD_2_clause + file LICENSE",
-      "sha256": "d14a767a3ea9778d6165f44f980dd257423ca6043926e3cd8f664f7171f89108",
-      "filesize": 134002,
+      "sha256": "7d07e72937b1cf158e69f183722bf79dbb91b8967a9dd29f4fa145500c2be668",
+      "filesize": 139478,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": "",
@@ -1363,11 +1363,11 @@
     {
       "ref": "desc",
       "package": "desc",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "type": "standard",
       "direct": false,
       "binary": false,
-      "dependencies": ["R6", "crayon", "rprojroot"],
+      "dependencies": ["cli", "R6", "rprojroot"],
       "vignettes": false,
       "needscompilation": false,
       "metadata": {
@@ -1376,16 +1376,16 @@
         "RemoteRef": "desc",
         "RemoteRepos": "https://cloud.r-project.org",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "1.4.0"
+        "RemoteSha": "1.4.1"
       },
-      "sources": ["https://cloud.r-project.org/src/contrib/desc_1.4.0.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/desc_1.4.0.tar.gz"],
-      "target": "src/contrib/desc_1.4.0.tar.gz",
+      "sources": ["https://cloud.r-project.org/src/contrib/desc_1.4.1.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/desc_1.4.1.tar.gz"],
+      "target": "src/contrib/desc_1.4.1.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": false,
       "license": "MIT + file LICENSE",
-      "sha256": "8220e4c706449b8121b822e70b1414f391ef419aed574836a234c63b83e5d649",
-      "filesize": 295610,
+      "sha256": "8f9ebb51eccf925b2e76bc65ecf495e8f3882b8c0053023f396622f0402d6f54",
+      "filesize": 80670,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": "",
@@ -2665,7 +2665,7 @@
     {
       "ref": "any::rmarkdown",
       "package": "rmarkdown",
-      "version": "2.12",
+      "version": "2.13",
       "type": "any",
       "direct": true,
       "binary": false,
@@ -2678,16 +2678,16 @@
         "RemoteRef": "any::rmarkdown",
         "RemoteRepos": "https://cloud.r-project.org",
         "RemotePkgPlatform": "source",
-        "RemoteSha": "2.12"
+        "RemoteSha": "2.13"
       },
-      "sources": ["https://cloud.r-project.org/src/contrib/rmarkdown_2.12.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/rmarkdown_2.12.tar.gz"],
-      "target": "src/contrib/rmarkdown_2.12.tar.gz",
+      "sources": ["https://cloud.r-project.org/src/contrib/rmarkdown_2.13.tar.gz", "https://cloud.r-project.org/src/contrib/Archive/rmarkdown_2.13.tar.gz"],
+      "target": "src/contrib/rmarkdown_2.13.tar.gz",
       "platform": "source",
       "rversion": "*",
       "directpkg": true,
       "license": "GPL-3",
-      "sha256": "c3aba9eda862483c7631485002b6b94e0076e4fdd2384a095ee30243b958e690",
-      "filesize": 3235953,
+      "sha256": "7217bea1d202b34a9994b2e068a7da063d5e3b1e0cfada89125aecdedbb80744",
+      "filesize": 3237237,
       "dep_types": ["Depends", "Imports", "LinkingTo"],
       "params": [],
       "install_args": "",
@@ -3097,7 +3097,7 @@
       "repotype": "cran"
     },
     {
-      "ref": "installed::/opt/R/4.1.2/lib/R/library/lattice",
+      "ref": "installed::/opt/R/4.1.3/lib/R/library/lattice",
       "package": "lattice",
       "version": "0.20-45",
       "type": "installed",
@@ -3108,15 +3108,15 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::/opt/R/4.1.2/lib/R/library/lattice",
+        "RemotePkgRef": "installed::/opt/R/4.1.3/lib/R/library/lattice",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
         "RemoteSha": "0.20-45"
       },
       "sources": [],
       "target": "src/contrib/lattice_0.20-45.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
-      "rversion": "R 4.1.2",
-      "built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-02-08 00:28:48 UTC; unix",
+      "rversion": "R 4.1.3",
+      "built": "R 4.1.3; x86_64-pc-linux-gnu; 2022-03-10 09:07:30 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2)",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -3125,9 +3125,9 @@
       "repotype": "cran"
     },
     {
-      "ref": "installed::/opt/R/4.1.2/lib/R/library/MASS",
+      "ref": "installed::/opt/R/4.1.3/lib/R/library/MASS",
       "package": "MASS",
-      "version": "7.3-54",
+      "version": "7.3-55",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -3136,15 +3136,15 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::/opt/R/4.1.2/lib/R/library/MASS",
+        "RemotePkgRef": "installed::/opt/R/4.1.3/lib/R/library/MASS",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "7.3-54"
+        "RemoteSha": "7.3-55"
       },
       "sources": [],
-      "target": "src/contrib/MASS_7.3-54.tar.gz",
+      "target": "src/contrib/MASS_7.3-55.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
-      "rversion": "R 4.1.2",
-      "built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-02-08 00:28:39 UTC; unix",
+      "rversion": "R 4.1.3",
+      "built": "R 4.1.3; x86_64-pc-linux-gnu; 2022-03-10 09:07:20 UTC; unix",
       "directpkg": false,
       "license": "GPL-2 | GPL-3",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -3153,9 +3153,9 @@
       "repotype": "cran"
     },
     {
-      "ref": "installed::/opt/R/4.1.2/lib/R/library/Matrix",
+      "ref": "installed::/opt/R/4.1.3/lib/R/library/Matrix",
       "package": "Matrix",
-      "version": "1.3-4",
+      "version": "1.4-0",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -3164,15 +3164,15 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::/opt/R/4.1.2/lib/R/library/Matrix",
+        "RemotePkgRef": "installed::/opt/R/4.1.3/lib/R/library/Matrix",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "1.3-4"
+        "RemoteSha": "1.4-0"
       },
       "sources": [],
-      "target": "src/contrib/Matrix_1.3-4.tar.gz",
+      "target": "src/contrib/Matrix_1.4-0.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
-      "rversion": "R 4.1.2",
-      "built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-02-08 00:28:59 UTC; unix",
+      "rversion": "R 4.1.3",
+      "built": "R 4.1.3; x86_64-pc-linux-gnu; 2022-03-10 09:07:42 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2) | file LICENCE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -3181,9 +3181,9 @@
       "repotype": "cran"
     },
     {
-      "ref": "installed::/opt/R/4.1.2/lib/R/library/mgcv",
+      "ref": "installed::/opt/R/4.1.3/lib/R/library/mgcv",
       "package": "mgcv",
-      "version": "1.8-38",
+      "version": "1.8-39",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -3192,15 +3192,15 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::/opt/R/4.1.2/lib/R/library/mgcv",
+        "RemotePkgRef": "installed::/opt/R/4.1.3/lib/R/library/mgcv",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "1.8-38"
+        "RemoteSha": "1.8-39"
       },
       "sources": [],
-      "target": "src/contrib/mgcv_1.8-38.tar.gz",
+      "target": "src/contrib/mgcv_1.8-39.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
-      "rversion": "R 4.1.2",
-      "built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-02-08 00:32:16 UTC; unix",
+      "rversion": "R 4.1.3",
+      "built": "R 4.1.3; x86_64-pc-linux-gnu; 2022-03-10 09:11:10 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2)",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
@@ -3209,9 +3209,9 @@
       "repotype": "cran"
     },
     {
-      "ref": "installed::/opt/R/4.1.2/lib/R/library/nlme",
+      "ref": "installed::/opt/R/4.1.3/lib/R/library/nlme",
       "package": "nlme",
-      "version": "3.1-153",
+      "version": "3.1-155",
       "type": "installed",
       "direct": false,
       "binary": true,
@@ -3220,15 +3220,15 @@
       "needscompilation": true,
       "metadata": {
         "RemoteType": "installed",
-        "RemotePkgRef": "installed::/opt/R/4.1.2/lib/R/library/nlme",
+        "RemotePkgRef": "installed::/opt/R/4.1.3/lib/R/library/nlme",
         "RemotePkgPlatform": "x86_64-pc-linux-gnu",
-        "RemoteSha": "3.1-153"
+        "RemoteSha": "3.1-155"
       },
       "sources": [],
-      "target": "src/contrib/nlme_3.1-153.tar.gz",
+      "target": "src/contrib/nlme_3.1-155.tar.gz",
       "platform": "x86_64-pc-linux-gnu",
-      "rversion": "R 4.1.2",
-      "built": "R 4.1.2; x86_64-pc-linux-gnu; 2022-02-08 00:30:46 UTC; unix",
+      "rversion": "R 4.1.3",
+      "built": "R 4.1.3; x86_64-pc-linux-gnu; 2022-03-10 09:09:31 UTC; unix",
       "directpkg": false,
       "license": "GPL (>= 2) | file LICENCE",
       "dep_types": ["Depends", "Imports", "LinkingTo"],
