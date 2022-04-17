@@ -22,26 +22,26 @@ library(falrec)
 
 tail(falrec, 20)
 #>            data tipo evento tamanho  n
-#> 5965 2022-01-01  rec    def   micro 11
-#> 5966 2022-01-01  rec    def   media 11
-#> 5967 2022-01-01  rec    def  grande  2
-#> 5968 2022-01-01  rec    def   total 24
-#> 5969 2022-02-01  fal    req   micro 33
-#> 5970 2022-02-01  fal    req   media 16
-#> 5971 2022-02-01  fal    req  grande 13
-#> 5972 2022-02-01  fal    req   total 62
-#> 5973 2022-02-01  fal    dec   micro 35
-#> 5974 2022-02-01  fal    dec   media 17
-#> 5975 2022-02-01  fal    dec  grande  5
-#> 5976 2022-02-01  fal    dec   total 57
-#> 5977 2022-02-01  rec    req   micro 35
-#> 5978 2022-02-01  rec    req   media 15
-#> 5979 2022-02-01  rec    req  grande  5
-#> 5980 2022-02-01  rec    req   total 55
 #> 5981 2022-02-01  rec    def   micro 22
 #> 5982 2022-02-01  rec    def   media 26
 #> 5983 2022-02-01  rec    def  grande  9
 #> 5984 2022-02-01  rec    def   total 57
+#> 5985 2022-03-01  fal    req   micro 37
+#> 5986 2022-03-01  fal    req   media 13
+#> 5987 2022-03-01  fal    req  grande 19
+#> 5988 2022-03-01  fal    req   total 69
+#> 5989 2022-03-01  fal    dec   micro 38
+#> 5990 2022-03-01  fal    dec   media 17
+#> 5991 2022-03-01  fal    dec  grande  4
+#> 5992 2022-03-01  fal    dec   total 59
+#> 5993 2022-03-01  rec    req   micro 59
+#> 5994 2022-03-01  rec    req   media 22
+#> 5995 2022-03-01  rec    req  grande  7
+#> 5996 2022-03-01  rec    req   total 88
+#> 5997 2022-03-01  rec    def   micro 46
+#> 5998 2022-03-01  rec    def   media 19
+#> 5999 2022-03-01  rec    def  grande  5
+#> 6000 2022-03-01  rec    def   total 70
 ```
 
 Também é possível baixar a base diretamente do site através da função
