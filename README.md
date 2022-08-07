@@ -15,33 +15,38 @@ Experian](https://www.serasaexperian.com.br/amplie-seus-conhecimentos/indicadore
 
 ## Base de dados
 
-A base de dados pode ser acessada diretamente rodando
+A base de dados pode ser acessada diretamente dos releases rodando a
+função `falrec_data()`
 
 ``` r
 library(falrec)
 
+falrec <- falrec_data()
+
 tail(falrec, 20)
-#>            data tipo evento tamanho  n
-#> 6013 2022-04-01  rec    def   micro 37
-#> 6014 2022-04-01  rec    def   media 17
-#> 6015 2022-04-01  rec    def  grande  8
-#> 6016 2022-04-01  rec    def   total 62
-#> 6017 2022-05-01  fal    req   micro 49
-#> 6018 2022-05-01  fal    req   media 18
-#> 6019 2022-05-01  fal    req  grande  8
-#> 6020 2022-05-01  fal    req   total 75
-#> 6021 2022-05-01  fal    dec   micro 49
-#> 6022 2022-05-01  fal    dec   media 16
-#> 6023 2022-05-01  fal    dec  grande  2
-#> 6024 2022-05-01  fal    dec   total 67
-#> 6025 2022-05-01  rec    req   micro 36
-#> 6026 2022-05-01  rec    req   media 16
-#> 6027 2022-05-01  rec    req  grande  6
-#> 6028 2022-05-01  rec    req   total 58
-#> 6029 2022-05-01  rec    def   micro 31
-#> 6030 2022-05-01  rec    def   media 19
-#> 6031 2022-05-01  rec    def  grande  6
-#> 6032 2022-05-01  rec    def   total 56
+#> # A tibble: 20 × 5
+#>    data       tipo  evento tamanho     n
+#>    <date>     <chr> <chr>  <chr>   <dbl>
+#>  1 2022-05-01 rec   def    micro      31
+#>  2 2022-05-01 rec   def    media      19
+#>  3 2022-05-01 rec   def    grande      6
+#>  4 2022-05-01 rec   def    total      56
+#>  5 2022-06-01 fal   req    micro      33
+#>  6 2022-06-01 fal   req    media      21
+#>  7 2022-06-01 fal   req    grande     14
+#>  8 2022-06-01 fal   req    total      68
+#>  9 2022-06-01 fal   dec    micro      39
+#> 10 2022-06-01 fal   dec    media      16
+#> 11 2022-06-01 fal   dec    grande      6
+#> 12 2022-06-01 fal   dec    total      61
+#> 13 2022-06-01 rec   req    micro      38
+#> 14 2022-06-01 rec   req    media      14
+#> 15 2022-06-01 rec   req    grande      5
+#> 16 2022-06-01 rec   req    total      57
+#> 17 2022-06-01 rec   def    micro      38
+#> 18 2022-06-01 rec   def    media      17
+#> 19 2022-06-01 rec   def    grande      6
+#> 20 2022-06-01 rec   def    total      61
 ```
 
 Também é possível baixar a base diretamente do site através da função
@@ -49,7 +54,7 @@ Também é possível baixar a base diretamente do site através da função
 é atualizada mensalmente.
 
 Se quiser acessar a base em excel, ela pode ser obtida [neste
-link](https://github.com/abjur/falrec/blob/master/inst/extdata/falrec.xlsx?raw=true).
+link](https://github.com/abjur/falrec/releases/download/v0.2.0/falrec.xlsx).
 
 ## Gráfico
 
