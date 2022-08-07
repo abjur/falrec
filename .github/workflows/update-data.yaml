@@ -35,12 +35,12 @@ jobs:
         run: |
           Rscript "data-raw/update.R"
       - name: Update README
-        run: rmarkdown::render("README.Rmd")
+        run: rmarkdown::render("README.Rmd", "github_document")
         shell: Rscript {0}
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add -A
+          git add README.md
           git commit -m 'Update data' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
