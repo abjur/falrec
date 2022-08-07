@@ -2,8 +2,10 @@
 
 devtools::load_all()
 falrec <- falrec::load_falrec()
-dir.create("inst/extdata", FALSE, TRUE)
-writexl::write_xlsx(falrec, "inst/extdata/falrec.xlsx")
-usethis::use_data(falrec, overwrite = TRUE)
-devtools::document()
-devtools::install_local()
+
+saveRDS(falrec, "falrec.rds")
+writexl::write_xlsx(falrec, "falrec.xlsx")
+
+piggyback::pb_upload("falrec.rds", tag = "v0.2.0", overwrite = TRUE)
+piggyback::pb_upload("falrec.xlsx", tag = "v0.2.0", overwrite = TRUE)
+

@@ -6,6 +6,7 @@ on:
       - main
   schedule:
   - cron: "0 6 * * 0"
+  workflow_dispatch:
 
 name: update-data
 

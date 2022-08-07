@@ -23,17 +23,19 @@ O pacote `{falrec}` baixa e atualiza os dados de falências e recuperações dis
 
 ## Base de dados
 
-A base de dados pode ser acessada diretamente rodando
+A base de dados pode ser acessada diretamente dos releases rodando a função `falrec_data()`
 
 ```{r bd}
 library(falrec)
+
+falrec <- falrec_data()
 
 tail(falrec, 20)
 ```
 
 Também é possível baixar a base diretamente do site através da função `load_falrec()`. A princípio, essa função não é necessária, pois a base é atualizada mensalmente.
 
-Se quiser acessar a base em excel, ela pode ser obtida [neste link](https://github.com/abjur/falrec/blob/master/inst/extdata/falrec.xlsx?raw=true).
+Se quiser acessar a base em excel, ela pode ser obtida [neste link](https://github.com/abjur/falrec/releases/download/v0.2.0/falrec.xlsx).
 
 ## Gráfico
 

@@ -42,3 +42,17 @@ load_falrec <- function() {
 
   da_falrec
 }
+
+#' Load falrec data from release
+#'
+#' @export
+falrec_data <- function() {
+  path <- tempfile()
+  dir.create(path, FALSE, TRUE)
+  file_rds <- "falrec.rds"
+  piggyback::pb_download(file = file_rds, repo = "abjur/falrec", dest = path)
+  f <- file.path(path, file_rds)
+  res <- readRDS(f)
+  unlink(path, recursive = TRUE)
+  res
+}
