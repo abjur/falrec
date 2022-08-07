@@ -1,6 +1,6 @@
 Package: falrec
 Title: Downloads Bankruptcy Data
-Version: 0.1.0.9000
+Version: 0.2.0
 Authors@R: 
     person(given = "Julio",
            family = "Trecenti",
@@ -18,7 +18,8 @@ Imports:
     httr,
     xml2,
     readxl,
-    tidyr
+    tidyr,
+    piggyback
 Depends: 
     R (>= 2.10)
 URL: https://github.com/abjur/falrec
