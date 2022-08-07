@@ -1,6 +1,6 @@
 ## code to prepare `falrec` dataset goes here
 
-devtools::load_all()
+pkgload::load_all()
 falrec <- falrec::load_falrec()
 
 saveRDS(falrec, "falrec.rds")

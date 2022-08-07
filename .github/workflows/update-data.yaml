@@ -22,11 +22,12 @@ jobs:
         with:
           cache-version: 2
           extra-packages: |
-            any::devtools
+            any::pkgload
             any::rmarkdown
             any::ggplot2
             any::dplyr
             any::writexl
+            local::.
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
