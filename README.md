@@ -27,26 +27,26 @@ tail(falrec, 20)
 #> # A tibble: 20 × 5
 #>    data       tipo  evento tamanho     n
 #>    <date>     <chr> <chr>  <chr>   <dbl>
-#>  1 2022-06-01 rec   req    total      57
-#>  2 2022-06-01 rec   def    micro      38
-#>  3 2022-06-01 rec   def    media      17
-#>  4 2022-06-01 rec   def    grande      6
-#>  5 2022-06-01 rec   def    total      61
-#>  6 2022-07-01 fal   req    micro      47
-#>  7 2022-07-01 fal   req    media      15
-#>  8 2022-07-01 fal   req    grande     21
-#>  9 2022-07-01 fal   req    total      83
-#> 10 2022-07-01 fal   dec    micro      62
-#> 11 2022-07-01 fal   dec    media      12
-#> 12 2022-07-01 fal   dec    total      74
-#> 13 2022-07-01 rec   req    micro      32
-#> 14 2022-07-01 rec   req    media      17
-#> 15 2022-07-01 rec   req    grande      7
-#> 16 2022-07-01 rec   req    total      56
-#> 17 2022-07-01 rec   def    micro      38
-#> 18 2022-07-01 rec   def    media      13
-#> 19 2022-07-01 rec   def    grande      6
-#> 20 2022-07-01 rec   def    total      57
+#>  1 2022-07-01 rec   def    micro      38
+#>  2 2022-07-01 rec   def    media      13
+#>  3 2022-07-01 rec   def    grande      6
+#>  4 2022-07-01 rec   def    total      57
+#>  5 2022-08-01 fal   req    micro      59
+#>  6 2022-08-01 fal   req    media      22
+#>  7 2022-08-01 fal   req    grande     25
+#>  8 2022-08-01 fal   req    total     106
+#>  9 2022-08-01 fal   dec    micro      43
+#> 10 2022-08-01 fal   dec    media      10
+#> 11 2022-08-01 fal   dec    grande      5
+#> 12 2022-08-01 fal   dec    total      58
+#> 13 2022-08-01 rec   req    micro      51
+#> 14 2022-08-01 rec   req    media      11
+#> 15 2022-08-01 rec   req    grande     12
+#> 16 2022-08-01 rec   req    total      74
+#> 17 2022-08-01 rec   def    micro      47
+#> 18 2022-08-01 rec   def    media      12
+#> 19 2022-08-01 rec   def    grande     13
+#> 20 2022-08-01 rec   def    total      72
 ```
 
 Também é possível baixar a base diretamente do site através da função
