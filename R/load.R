@@ -34,7 +34,7 @@ load_falrec <- function() {
   da_falrec <- da_falrec[, !grepl("remove", colunas)]
   da_falrec[["data"]] <- as.Date(da_falrec[["data"]])
   da_falrec <- da_falrec %>%
-    tidyr::pivot_longer(-1, "variavel", values_to = "n") %>%
+    tidyr::pivot_longer(2:ncol(da_falrec), "variavel", values_to = "n") %>%
     tidyr::separate("variavel", c("tipo", "evento", "tamanho"))
   da_falrec <- da_falrec[!is.na(da_falrec$n), ]
 
