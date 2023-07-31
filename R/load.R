@@ -9,7 +9,7 @@ load_falrec <- function() {
   )
   r <- httr::GET(u)
   xp <- paste0(
-    "//a[contains(@data-gtm-subname, 'decretadas') and @download]"
+    "//a[contains(@data-gtm-subname, 'recuperacoes') and @download]"
   )
   u_falrec <- r %>%
     xml2::read_html() %>%
