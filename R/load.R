@@ -13,7 +13,7 @@ load_falrec <- function() {
   )
   u_falrec <- r %>%
     xml2::read_html() %>%
-    xml2::xml_find_all(xp) %>%
+    xml2::xml_find_first(xp) %>%
     xml2::xml_attr("href")
   f <- tempfile(fileext = ".xlsx")
   httr::GET(u_falrec, httr::write_disk(f, TRUE))
